@@ -1,0 +1,11 @@
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+}
