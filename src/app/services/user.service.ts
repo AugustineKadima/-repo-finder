@@ -2,14 +2,17 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { CLIENT_ID} from 
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
-    apiKey:string = environment.githubAPIKey
-   _url:string = "https://api.github.com/users?" + this.apiKey
+  searchQuery!:string;
+  
+  apiKey:string = environment.githubAPIKey
+   _url:string = `https://api.github.com/users/${this.searchQuery}?access_token=${this.apiKey}`
 
   getGitHubUsers():Observable<any>{
     return this.http.get<any>(this._url)
