@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../classes/user';
 
 @Component({
   selector: 'app-user-form',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserFormComponent implements OnInit {
 
-
+ user = new User(0,"")
   submitUserName(){
 
   }

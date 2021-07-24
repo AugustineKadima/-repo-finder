@@ -39,3 +39,9 @@ button:hover{
     color: white;
     background-color: rgb(2, 2, 248);
 }
+
+.alert{
+    color: red;
+    background-color: rgb(248, 210, 210);
+    padding: 20px;
+}

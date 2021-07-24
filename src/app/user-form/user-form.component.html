@@ -3,9 +3,9 @@
         <h2>Github Search Form</h2>
         <div class="form-group">
             <label for="user">User Name:</label>
-            <input name="userName" #userName = "ngModel" [(ngModel)]="newUser.name" required type="text" class="form-contol" placeholder="Enter user name...">
+            <input name="userName" #userName = "ngModel"  id="userName" [(ngModel)]="user.userName" required type="text" class="form-contol" placeholder="Enter user name...">
 
-            <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
+            <div [hidden]="userName.valid || userName.pristine" class="alert">
                 <p>User name is required</p>
             </div>
         </div>
