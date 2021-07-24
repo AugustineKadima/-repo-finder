@@ -1,2 +1,5 @@
 <app-topbar></app-topbar>
-<app-user-form></app-user-form>
+<app-user-form (requiredUser)="findUser($event)"></app-user-form>
+<div>
+  {{userName}}
+</div>
