@@ -1,5 +1,3 @@
 <app-topbar></app-topbar>
 <app-user-form (requiredUser)="findUser($event)"></app-user-form>
-<div>
-  {{userName}}
-</div>
+<app-user [users]="gitUsers"></app-user>

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { UserService } from './services/user.service';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  gitUsers = ""
 
-  findUser(userName:string){
+  gitUsers:any[] = []
+
+  constructor(private userService: UserService){
     
   }
+
+  findUser(userName:any){
+    this.userService.getGitHubUsers().subscribe(data => this.gitUsers = data)
+  }
+
 }
