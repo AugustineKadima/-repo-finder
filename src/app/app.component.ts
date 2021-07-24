@@ -15,7 +15,8 @@ export class AppComponent {
   }
 
   findUser(userName:any){
-    this.userService.getGitHubUsers().subscribe(data => this.gitUsers = data)
+    this.userService.getGitHubUsers().subscribe(data => {this.gitUsers = data
+      console.log(data)})
   }
 
 }

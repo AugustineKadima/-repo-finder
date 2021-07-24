@@ -7,8 +7,9 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class UserService {
-    
-   _url:string = "https://api.github.com/users"
+
+    apiKey:string = environment.githubAPIKey
+   _url:string = "https://api.github.com/users?" + this.apiKey
 
   getGitHubUsers():Observable<any>{
     return this.http.get<any>(this._url)
