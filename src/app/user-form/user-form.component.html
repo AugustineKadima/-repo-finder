@@ -1,11 +1,15 @@
-<form action="submit">
+<form (ngSubmit)="submitUserName()" #userNameForm="ngForm">
     <div class="formContent">
         <h2>Github Search Form</h2>
         <div class="form-group">
             <label for="user">User Name:</label>
-            <input type="text" class="form-contol" placeholder="Enter user name...">
+            <input name="userName" #userName = "ngModel" [(ngModel)]="newUser.name" required type="text" class="form-contol" placeholder="Enter user name...">
+
+            <div [hidden]="userName.valid || userName.pristine" class="alert alert-danger">
+                <p>User name is required</p>
+            </div>
         </div>
-    <button>Search</button>
+    <button type="submit">Search</button>
     </div>
     
 </form>
