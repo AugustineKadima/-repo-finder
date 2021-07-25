@@ -13,9 +13,7 @@ img{
     display: flex;
 }
 
-.userInfo2{
-    background-color: rgb(249, 249, 255)
-}
+
 .userInfo div{
     margin-left: 20px;
 }

@@ -1,5 +1,5 @@
 
-<div class="userInfo" *ngIf="user">
+<div appUser class="userInfo" *ngIf="user">
     <img src="{{user.avatar_url}}" alt="">
     <div>
         <h3>{{user.login | titlecase}}</h3>    
@@ -8,7 +8,7 @@
     </div>
   
   </div>
-  <div class="userInfo userInfo2" *ngIf="user">
+  <div appUser class="userInfo userInfo2" *ngIf="user">
     
     <div>
         <p>Location: <strong>{{user.location | titlecase}}</strong> </p>    
