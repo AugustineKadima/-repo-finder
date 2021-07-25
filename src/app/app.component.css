@@ -1,0 +1,11 @@
+.userInforWithRepo{
+    display: flex;
+}
+
+app-repositories{
+    margin-left: 20px;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+}
+

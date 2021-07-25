@@ -13,7 +13,22 @@ img{
     display: flex;
 }
 
+.userInfo2{
+    background-color: rgb(249, 249, 255)
+}
 .userInfo div{
     margin-left: 20px;
 }
 
+p {
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+#para1{
+    background-color: cornsilk;
+    padding: 5px;
+}
+#para2{
+    background-color: rgb(240, 238, 238);
+    padding: 5px;
+}

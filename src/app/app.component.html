@@ -1,5 +1,8 @@
 <app-topbar></app-topbar>
 <app-user-form (requiredUser)="findUser($event)"></app-user-form>
-<app-user [user]="gitUser"></app-user>
-<app-repositories [repos]="gitHubRepos"></app-repositories>
+
+<div class="userInforWithRepo">
+    <app-user [user]="gitUser"></app-user>
+    <app-repositories [repos]="gitHubRepos"></app-repositories>
+</div>
 
