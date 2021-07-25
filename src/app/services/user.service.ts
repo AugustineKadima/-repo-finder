@@ -20,7 +20,7 @@ export class UserService {
 
   getGitHubRepos(searchQuery:string):Observable<any>{
   
-    return this.http.get<any>(`https://api.github.com/users/${searchQuery}?/repos=${this.apiKey}`
+    return this.http.get<any>(`https://api.github.com/users/${searchQuery}/repos?=${this.apiKey}`
     )
   }
   

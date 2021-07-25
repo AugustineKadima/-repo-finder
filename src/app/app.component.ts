@@ -21,11 +21,14 @@ export class AppComponent implements OnInit {
   findUser(user:User){
     this.userName = user.userName
     console.log(this.userName)
-    
+
     this.userService.getGitHubUsers(this.userName).subscribe(data => {this.gitUser = data
       console.log(data)})
 
-    this.userService.getGitHubRepos(this.userName).subscribe(data => this.gitHubRepos = data)
+    this.userService.getGitHubRepos(this.userName).subscribe(data => {
+      this.gitHubRepos = data
+      console.log(data)
+    })
   }
 
   ngOnInit(){
