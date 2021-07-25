@@ -1,4 +1,11 @@
 
-<div *ngFor="let repo of repos">
-    <p> <a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a> </p>
+<div >
+    <p id="repo"> <strong>Repositories</strong> </p>
+    <br>
+    <hr>
+    <br>
+    <ul *ngFor="let repo of repos">
+        <li><a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a> </li>
+    </ul>
+    
 </div>
