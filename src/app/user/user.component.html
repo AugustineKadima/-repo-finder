@@ -12,3 +12,16 @@
   
 </div> -->
 
+<div class="userInfo" *ngIf="user">
+    <img src="{{user.avatar_url}}" alt="">
+    <div>
+        <h3>{{user.login | titlecase}}</h3>
+        <br>
+        <p id="repo"> <strong>Repositories</strong> </p>
+        <hr>
+        <a>{{user.repos_url}}</a>
+    </div>
+    
+  
+  </div>
+  

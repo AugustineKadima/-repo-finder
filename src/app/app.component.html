@@ -1,7 +1,4 @@
 <app-topbar></app-topbar>
 <app-user-form (requiredUser)="findUser($event)"></app-user-form>
-<app-user [users]="gitUser"></app-user>
+<app-user [user]="gitUser"></app-user>
 
-<div *ngIf="gitUser">
-  <h1>{{gitUser.login}}</h1>
-</div>

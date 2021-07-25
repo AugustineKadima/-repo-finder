@@ -9,8 +9,10 @@ import { User } from './classes/user';
 })
 export class AppComponent implements OnInit {
 
-  gitUser:any 
+  gitUser:any
+  gitHubRepos:any 
   userName!:string 
+
 
   constructor(private userService: UserService){
     
@@ -18,12 +20,17 @@ export class AppComponent implements OnInit {
 
   findUser(user:User){
     this.userName = user.userName
+    console.log(this.userName)
+    
+    this.userService.getGitHubUsers(this.userName).subscribe(data => {this.gitUser = data
+      console.log(data)})
+
+    this.userService.getGitHubRepos(this.userName).subscribe(data => this.gitHubRepos = data)
   }
 
   ngOnInit(){
 
-    this.userService.getGitHubUsers(this.userName).subscribe(data => {this.gitUser = data
-      console.log(data)})
+
   }
 
 

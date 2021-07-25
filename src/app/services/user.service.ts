@@ -13,13 +13,13 @@ export class UserService {
   apiKey:string = environment.githubAPIKey
 
   getGitHubUsers(searchQuery:string):Observable<any>{
-    searchQuery = "AugustineKadima"
+    
     return this.http.get<any>(`https://api.github.com/users/${searchQuery}?=${this.apiKey}`
     )
   }
 
   getGitHubRepos(searchQuery:string):Observable<any>{
-    searchQuery = "AugustineKadima"
+  
     return this.http.get<any>(`https://api.github.com/users/${searchQuery}?/repos=${this.apiKey}`
     )
   }
@@ -28,5 +28,3 @@ export class UserService {
 }
 
 
-// PERSONAL ACCESS TOKEN
-// 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
