@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class RepositoriesComponent implements OnInit {
 
-  @Input() repos:any
+  @Input() repos!:any[]
   constructor() { }
 
   ngOnInit(): void {

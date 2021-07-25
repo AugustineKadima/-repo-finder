@@ -1,4 +1,4 @@
-<p>repositories works!</p>
-<div *ngIf="repos">
-    <p>{{repos}}</p>
+
+<div *ngFor="let repo of repos">
+    <p> <a href="{{repo.html_url}}" target="_blank">{{repo.name}}</a> </p>
 </div>
