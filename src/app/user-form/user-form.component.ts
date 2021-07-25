@@ -9,8 +9,8 @@ import { User } from '../classes/user';
 })
 export class UserFormComponent implements OnInit {
 
- user = new User(0,"")
- 
+ user:User = new User(0,"")
+
  @Output() requiredUser = new EventEmitter<User>()
 
   submitUserName(){

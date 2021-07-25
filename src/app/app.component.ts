@@ -1,22 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UserService } from './services/user.service';
+import { User } from './classes/user';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
-  gitUsers:any[] = []
+  gitUser:any 
+  userName!:string 
 
   constructor(private userService: UserService){
     
   }
 
-  findUser(userName:any){
-    this.userService.getGitHubUsers().subscribe(data => {this.gitUsers = data
+  findUser(user:User){
+    this.userName = user.userName
+  }
+
+  ngOnInit(){
+
+    this.userService.getGitHubUsers(this.userName).subscribe(data => {this.gitUser = data
       console.log(data)})
   }
+
 
 }
