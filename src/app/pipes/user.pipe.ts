@@ -4,9 +4,9 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'user'
 })
 export class UserPipe implements PipeTransform {
-
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(value: any, ...args: any[]) {
+    throw new Error('Method not implemented.');
   }
+
 
 }

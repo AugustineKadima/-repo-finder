@@ -1,27 +1,39 @@
-# RepoFinder
+# REPOS
+#### Search github users, 207 july 2021
+#### By **Augustine Kadima Samuel**
+## Description
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
+The website allows you to search for github users and find their repositories.
+## Setup/Installation Requirements
+* Open your browser
+* Search for our website using the following link https://augustinekadima.github.io/repos/
+* Type in the website's search bar and click on search
+* Click on a repositories to see their content
 
-## Development server
+Are you having any problem accessing our site? you can reach out to us through the contact details given in the contact section.
+## Known Bugs
+We are not aware of any bugs that may be present on this site. If you encounter any or would like to contribute, kindly let us know.
+## Technologies Used
+We used JavaScript, CSS, Angular, Typescript and HTML to develop this website
+## Support and contact details
+Contact us through kadimasam@gmail.com
+### License
+Copyright (c) [2021] [Augustine Kadima Samuel]
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## Code scaffolding
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
