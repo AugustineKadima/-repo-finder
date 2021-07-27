@@ -12,9 +12,9 @@ The website allows you to search for github users and find their repositories.
 
 Are you having any problem accessing our site? you can reach out to us through the contact details given in the contact section.
 ## Known Bugs
-We are not aware of any bugs that may be present on this site. If you encounter any or would like to contribute, kindly let us know.
+I am not aware of any bugs that may be present on this site. If you encounter any or would like to contribute, kindly let us know.
 ## Technologies Used
-We used JavaScript, CSS, Angular, Typescript and HTML to develop this website
+I used JavaScript, CSS, Angular, Typescript and HTML to develop this website
 ## Support and contact details
 Contact us through kadimasam@gmail.com
 ### License
